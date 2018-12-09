@@ -1,0 +1,13 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/topicdetail/index",
+    "pages/login/login",
+    "pages/webview"
+  ],
+  "window": {
+    "navigationBarTitleText": "轟Plus",
+    "navigationBarTextStyle": "black",
+    "navigationBarBackgroundColor": "#ffffff"
+  }
+}

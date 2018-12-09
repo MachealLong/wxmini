@@ -1,0 +1,22 @@
+<view class='share-modal-bg' wx:if='{{showModal}}' bindtap='hideModal'>
+  <view class='canvas-wrap' catchlongpress='saveImg' catchtap='0'>
+    <view><image src='{{shareImg}}' class='share-img'></image></view>
+    <view class='share-img-tips'>长按图片保存至相册，快去分享吧！</view>
+  </view>
+</view>
+<view class='bottom-share-modal' bindtap='hideShareModal' wx:if='{{showShareModal}}'>
+  <view class='share-detail'>
+    <view class='share-tips'>分享到：</view>
+    <view class='share-items'>
+      <view catchtap='shareFrends'>
+        <view><image src='/imgs/topic-share-friends2.png' mode='aspectFill'></image></view>
+        <view class='share-text'>朋友圈</view>
+      </view>
+      <view>
+        <view><button open-type='share' catchtap='1' ><image src='/imgs/topic-share-wx2.png' class='wx-image' mode='aspectFill'></image></button></view>
+        <view class='share-text' style='margin-top: 20rpx;'>微信</view>
+      </view>
+    </view>
+  </view>
+</view>
+<canvas style="width: 286px;height: 514px;background:red;position: fixed;top: 0;" canvas-id="shareFrends" wx:if='{{showShareModal}}'></canvas>
