@@ -167,13 +167,13 @@ Component({
       ctx.setTextAlign('left');
       const nameWidth = ctx.measureText(name).width;
       // 标题换行
-      this.wordsWrap(ctx, name, nameWidth, 272, 16, 272, 16);
+      this.wordsWrap(ctx, name, nameWidth, 262, 16, 272, 16);
       // 计算标题所占高度
       const titleHight = Math.ceil(nameWidth / 252) * 16;
       
       ctx.font = 'normal normal 10px sans-serif';
-      ctx.fillText('租房子找芒果！', 65,  20+titleHight);
-      ctx.fillText('租房子找芒果！', 65, 40 + titleHight);
+      ctx.fillText('租房子找芒果！', 65,  50);
+      ctx.fillText('租房子找芒果！', 65, 70);
       // 绘制头像和昵称
       // ctx.arc(36, 268 + titleHight, 20, 0, 2 * Math.PI);
       // ctx.clip()
@@ -186,7 +186,7 @@ Component({
       ctx.setFillStyle('#6a6a6a')
       ctx.fillText(detail.houseMemo, 20, 320 + titleHight);
 
-      ctx.fillText(detail.houseMemo, 180, 320 + titleHight);
+      ctx.fillText(detail.area, 180, 320 + titleHight);
       ctx.font = 'normal normal 14px sans-serif';
       ctx.setTextAlign('left');
       ctx.setFillStyle('#bbbbbb')
